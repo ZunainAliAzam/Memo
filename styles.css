@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.logo h2{
+    color:white;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.logo p{
+    color:white;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: maroon;
+    padding:20px;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    list-style-type: none;
+    margin-right:50px;
+    transition: transform 0.3s ease;
+
+}
+.nav-list a{
+    color:white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.nav-list a:hover {
+    text-decoration: solid;
+    transform: scale(1.1);
+}
+
+.nav-list .active {
+    font-weight: bold;
+}
+
+.login button{
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    border:none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.login span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.login button:hover{
+    text-decoration:solid;
+    transform: scale(1.1);
+}
+.hamburger{
+    display: inline-block;
+    border-radius:2px ;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    position: relative;
+}
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    border-radius: 2px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.hamburger::before {
+    top: -10px;
+}
+
+.hamburger::after {
+    bottom: -10px;
+}
+main{
+    width: min(80%,1200px);
+    margin:auto;
+}
+
+main form{
+    display: grid;
+    gap:1em;
+    padding-block: 2em;
+
+}
+
+form input,textarea{
+    padding:10px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form button{
+    border:none;
+    padding:10px 15px 10px 15px;
+    border-radius: 5px;
+    background-color: maroon;
+    color:white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
