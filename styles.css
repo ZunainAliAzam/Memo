@@ -111,7 +111,7 @@ form input,textarea{
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-form button{
+button{
     border:none;
     padding:10px 15px 10px 15px;
     border-radius: 5px;
@@ -121,4 +121,68 @@ form button{
     font-size: 14px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover{    
+    background-color: #ff3333;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1em;
+}
+
+.note-card {
+    margin-top:20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5em;
+    align-items: center;
+    margin-bottom: 10px;
+    gap:0.5em;
+  }
+.note-content{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: lightsalmon;
+    padding-block:1em;
+    /* display: */
+    /*justify-content: space-between; */
+    flex-grow:1;
+    flex-basis: 200px;
+    
+}
+
+.note-title{
+    margin:0 10px 0 10px;
+    font-size:18px; 
+    font-weight: bold;
+    margin-bottom:5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.note-description{
+    margin:0 10px 0 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+}
+/* .note-actions{
+    display: flex;
+    gap:10px;
+} */
+
+.edit-button, .delete-button {
+    margin:0 10px 0 10px;
+    display: flex;
+    gap:10px;
+    padding:5px 10px;
+    border:none;
+    margin-top:0.5em;
+    background-color: maroon;
+    color:white;
+    font-size:14px;
+    border-radius: 3px;
+    cursor:pointer;
+}
+.edit-button:hover, .delete-button:hover {
+    background-color: #ff3333;
 }
