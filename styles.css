@@ -17,8 +17,17 @@
     font-style: italic;
     text-align: center;
 }
-
+.partition{
+    background-color: #000000;
+    padding: 0.5px;
+}
 .nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,7 +169,7 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .note-description{
-    margin:0 10px 0 10px;
+    margin:10px 10px 10px 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     font-size: 14px;
