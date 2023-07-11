@@ -174,10 +174,6 @@ h1{
     font-style: italic;
     font-size: 14px;
 }
-/* .note-actions{
-    display: flex;
-    gap:10px;
-} */
 
 .edit-button, .delete-button {
     margin:0 10px 0 10px;
@@ -194,4 +190,36 @@ h1{
 }
 .edit-button:hover, .delete-button:hover {
     background-color: #ff3333;
+}
+
+.footer {
+    background-color:maroon;
+	max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+	overflow: auto;
+    padding:20px 0 0px 100px;
+}
+
+.footer,
+.footer a {
+	color: white;
+	font-size: 0.9rem;
+}
+
+.footer p {
+	margin-bottom: 1rem;
+
+}
+
+.footer .footer-cols {
+    margin-right: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.footer li {
+	line-height: 1.5;
 }
